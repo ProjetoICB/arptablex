@@ -22,6 +22,10 @@ GEM
       activesupport (= 3.2.12)
       arel (~> 3.0.2)
       tzinfo (~> 0.3.29)
+    activerecord-mysql-adapter (0.0.1)
+      activerecord (>= 3.2.9)
+      activesupport (>= 3.2.9)
+      mysql (>= 2.9.0)
     activeresource (3.2.12)
       activemodel (= 3.2.12)
       activesupport (= 3.2.12)
@@ -66,7 +70,8 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     multi_json (1.9.2)
-    mysql2 (0.3.15)
+    mysql (2.9.1)
+    mysql2 (0.3.18)
     newrelic_rpm (3.7.3.204)
     polyglot (0.3.4)
     rack (1.4.5)
@@ -125,6 +130,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-mysql-adapter
   coffee-rails (~> 3.2.1)
   jquery-datatables-rails
   jquery-rails
@@ -132,7 +138,8 @@ DEPENDENCIES
   jquery-validation-rails
   less-rails
   libv8 (~> 3.16, >= 3.16.14.3)
-  mysql2
+  mysql (= 2.9.1)
+  mysql2 (= 0.3.18)
   newrelic_rpm
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)

@@ -24,13 +24,13 @@ development:
   adapter: mysql2
   host: localhost
   encoding: utf8
-  database: informatica
+  database: arptable
   username: root
-  password: usp12
+  password: sist3m@s2
   reconnect: false
   pool: 5
   timeout: 10000
-  socket: /var/run/mysqld/mysqld.sock
+  socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

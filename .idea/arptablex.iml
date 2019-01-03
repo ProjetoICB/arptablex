@@ -131,6 +131,7 @@
     <orderEntry type="library" scope="PROVIDED" name="actionpack (v3.2.12, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v3.2.12, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v3.2.12, rbenv: 1.9.3-p374) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activerecord-mysql-adapter (v0.0.1, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activeresource (v3.2.12, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v3.2.12, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v3.0.3, rbenv: 1.9.3-p374) [gem]" level="application" />
@@ -156,7 +157,8 @@
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.4.4, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.25.1, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.9.2, rbenv: 1.9.3-p374) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mysql2 (v0.3.15, rbenv: 1.9.3-p374) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mysql (v2.9.1, rbenv: 1.9.3-p374) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mysql2 (v0.3.18, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="newrelic_rpm (v3.7.3.204, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.4, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.4.5, rbenv: 1.9.3-p374) [gem]" level="application" />

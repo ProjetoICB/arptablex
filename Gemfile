@@ -5,7 +5,10 @@ gem 'rails', '3.2.12'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+gem 'mysql', '2.9.1'
+gem 'mysql2', '0.3.18'
+gem 'activerecord-mysql-adapter'
+
 
 
 # Gems used only for assets and not required
