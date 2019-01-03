@@ -1,0 +1,71 @@
+<html>
+<head>
+  <script>
+
+
+
+      $(document).ready(function() {
+
+          $('#arps').dataTable( {
+              "aaSorting": [[2,'desc']],
+              "sScrollY": "650px",
+              "bPaginate": true,
+              "bScrollCollapse": true,
+              "iDisplayLength": 15,
+              "oLanguage": {
+                  "sProcessing":   "Processando...",
+                  "sLengthMenu":   "Mostrar _MENU_ registros",
+                  "sZeroRecords":  "Não foram encontrados resultados",
+                  "sInfo":         "Mostrando de _START_ até _END_ de _TOTAL_ registros",
+                  "sInfoEmpty":    "Mostrando de 0 até 0 de 0 registros",
+                  "sInfoFiltered": "(filtrado de _MAX_ registros no total)",
+                  "sInfoPostFix":  "",
+                  "sSearch":       "Buscar:",
+                  "sUrl":          "",
+                  "oPaginate": {
+                      "sFirst":    "Primeiro",
+                      "sPrevious": "Anterior",
+                      "sNext":     "Seguinte",
+                      "sLast":     "Último"
+                  }
+              }
+          } );
+      } );
+
+  </script>
+</head>
+
+<body>
+
+<legend><h1>TABELA ARP</h1></legend>
+
+
+<table  class="table table-striped table-bordered"  id="arps">
+
+  <thead>
+  <tr>
+    <th>IP</th>
+    <th>Mac Address</th>
+    <th>Data Inicial</th>
+    <th>Data Final</th>
+    <th>Vlan</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @arps.each do |top| %>
+      <tr>
+        <td><%= top.ip %></td>
+        <td><%= top.mac_address %></td>
+        <td><%= top.dt_inicial %></td>
+        <td><%= top.dt_final %></td>
+        <td><%= top.vlan %></td>
+      </tr>
+
+  <% end %>
+  </tbody>
+
+</table>
+</body>
+
+</html>

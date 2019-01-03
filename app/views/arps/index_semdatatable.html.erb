@@ -1,0 +1,100 @@
+<html>
+<head>
+
+  <script>
+
+      $(document).ready(function() {
+          var oTable;
+
+          /* Add the events etc before DataTables hides a column */
+          $("thead input").keyup( function () {
+              /* Filter on the column (the index_semdatatable) of this element */
+              oTable.fnFilter( this.value, oTable.oApi._fnVisibleToColumnIndex(
+                      oTable.fnSettings(), $("thead input").index(this) ) );
+          } );
+
+          /*
+           * Support functions to provide a little bit of 'user friendlyness' to the textboxes
+           */
+          $("thead input").each( function (i) {
+              this.initVal = this.value;
+          } );
+
+          $("thead input").focus( function () {
+              if ( this.className == "search_init" )
+              {
+                  this.className = "";
+                  this.value = "";
+              }
+          } );
+
+          $("thead input").blur( function (i) {
+              if ( this.value == "" )
+              {
+                  this.className = "search_init";
+                  this.value = this.initVal;
+              }
+          } );
+
+
+          oTable = $('#arps').dataTable( {
+              "bPaginate":true,
+              "sPaginationType": "full_numbers",
+              "aoColumnDefs": [
+                  { "bVisible": true, "aTargets": [  ] }
+              ],
+              "oLanguage": {
+                  "sSearch": "Search all columns:"
+              },
+              "bSortCellsTop": true
+          } );
+      } );
+
+  </script>
+
+</head>
+
+<body>
+
+<legend><h1>TABELA ARP</h1></legend>
+
+
+<table  class="table table-striped table-bordered"  id="arps">
+
+  <thead>
+  <tr>
+    <th>IP</th>
+    <th>Mac Address</th>
+    <th>Data Inicial</th>
+    <th>Data Final</th>
+    <th>Vlan</th>
+  </tr>
+  </thead>
+
+  <thead>
+  <tr>
+    <th><input type="text" name="adm_username" title="Search usernames" class="search_init" /></th>
+    <th><input type="text" name="adm_ref" title="Search REFs" class="search_init" /></th>
+    <th><input type="text" name="adm_name" title="Search names" class="search_init" /></th>
+    <th><input type="text" name="adm_email" title="Search emails" class="search_init" /></th>
+    <th><input type="text" name="adm_last_login" title="Search last logins" class="search_init" /></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @arps.each do |top| %>
+      <tr>
+        <td><%= top.ip %></td>
+        <td><%= top.mac_address %></td>
+        <td><%= top.dt_inicial %></td>
+        <td><%= top.dt_final %></td>
+        <td><%= top.vlan %></td>
+      </tr>
+
+  <% end %>
+  </tbody>
+
+</table>
+</body>
+
+</html>

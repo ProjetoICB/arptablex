@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <title>Arptablex</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+  <script>
+
+      $(document).ready(function () {
+
+          $(window).scroll(function () {
+              if ($(this).scrollTop() > 100) {
+                  $('.scrollup').fadeIn();
+              } else {
+                  $('.scrollup').fadeOut();
+              }
+          });
+
+          $('.scrollup').click(function () {
+              $("html, body").animate({
+                  scrollTop: 0
+              }, 600);
+              return false;
+          });
+
+      });
+
+  </script>
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+
+
+
+  <div class="container">
+    <div class="navbar-header">
+
+      <a class="navbar-brand" href="http://watson.icb.usp.br/arptable">Busca no banco de dados do DHCP</a>
+
+    </div>
+
+  </div>
+
+</nav>
+
+<%= yield %>
+
+
+
+
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+      <div class="container">
+
+        <article>
+          <a href="#" class="scrollup"><span class="glyphicon glyphicon-arrow-up"></span></a>
+
+        </article>
+
+
+        <p class=" navbar-text pull-right">
+	        Sistema Desenvolvido pela STI/ICB- 2014  <%= image_tag "origlogo.png", :size => '35x40'  %>
+	</p>
+
+      </div>
+    </nav>
+
+</body>
+</html>
