@@ -135,7 +135,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v3.2.12, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v3.0.3, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.0.4, rbenv: 1.9.3-p374) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.13.6, rbenv: 1.9.3-p374) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.14.6, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v3.2.2, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.2.0, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.7.0, rbenv: 1.9.3-p374) [gem]" level="application" />
@@ -167,17 +167,16 @@
     <orderEntry type="library" scope="PROVIDED" name="railties (v3.2.12, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.3.0, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v3.12.2, rbenv: 1.9.3-p374) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="ref (v1.0.5, rbenv: 1.9.3-p374) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ref (v2.0.0, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.3.5, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v3.2.6, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v2.2.2, rbenv: 1.9.3-p374) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="therubyracer (v0.12.1, rbenv: 1.9.3-p374) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="therubyracer (v0.12.2, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.19.1, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v1.4.1, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="treetop (v1.4.15, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="twitter-bootstrap-rails (v2.2.8, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.39, rbenv: 1.9.3-p374) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="uglifier (v2.5.0, rbenv: 1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="will_paginate (v3.0.5, rbenv: 1.9.3-p374) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">

@@ -17,7 +17,7 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
-  gem 'uglifier', '>= 1.0.3'
+  # gem 'uglifier', '>= 1.0.3'
 end
 
   gem 'jquery-rails'
@@ -36,6 +36,12 @@ gem 'newrelic_rpm'
 
 
 gem 'jquery-validation-rails'
+
+
+
+############### libv8 ##############
+
+gem 'libv8', '~> 3.16', '>= 3.16.14.3'
 
 #####################################
 
