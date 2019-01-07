@@ -2,7 +2,10 @@ Arptablex::Application.routes.draw do
 
   resources :arps
 
-  root :to => 'arps#busca'
+  #root :to => 'arps#busca'
+  root  :to => 'arps#index'
+
+
 
 
   match "busca" => 'arps#busca'

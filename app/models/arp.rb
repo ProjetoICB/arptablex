@@ -29,7 +29,7 @@ class Arp < ActiveRecord::Base
      end
 
      if search4  != ''
-       sql +=  'and dt_final <= ' + "'#{search4} 00:00:00'"
+       sql +=  'and dt_final <= ' + "'#{search4} 23:59:59'"
      end
 
      if search == '' and search2 == '' 
