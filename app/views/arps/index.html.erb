@@ -57,7 +57,7 @@ $(function() {
 
 <body>
 
-<h1>TABELA ARP</h1>
+<h2 class="text-center">TABELA ARP</h2>
 
 <div class="container-fluid">
 <%= form_tag arps_path, :method => 'get' do %>
@@ -73,6 +73,7 @@ $(function() {
       <%= label_tag :search, "IP" %>
       <%= text_field_tag :search, params[:search], :type=>"text" %>
       <%= submit_tag "Buscar", :class => 'btn btn-primary btn-sm active'%>
+      <%= link_to "Limpar", root_path, :class => 'btn btn-success btn-sm active' %>
     </p>
 
 <% end %>
